@@ -1,0 +1,22 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<h1>Create Book</h1> <a href="{% url 'author' %}" class="btn btn-primary"> Add Author </a>
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="Submit" value="Submit">
+
+
+</form>
+
+{% endblock %}
+
+
